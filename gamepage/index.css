@@ -1,0 +1,15 @@
+img {
+    max-width: 25%;
+    height: auto;
+    float: left;
+}
+div.gallery img{
+    width: 100%;
+    height: auto;
+}
+dt {
+    font-weight: bold;
+}
+body {
+    background-color: beige;
+}

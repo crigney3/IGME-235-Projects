@@ -4,11 +4,13 @@ body {
 
 h1 {
     display: flex;
+    color: #F3F7F0;
     border-bottom: 3px solid #F2545B;
 }
 
 h5 {
     font-family: serif;
+    color: #F3F7F0;
 }
 
 img {

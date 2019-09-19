@@ -1,21 +1,29 @@
 body {
     background-color: #19323C;
+    margin: 15px;
 }
 
-h1 {
+#Title {
     display: flex;
     color: #F3F7F0;
     border-bottom: 3px solid #F2545B;
 }
 
-h5 {
-    font-family: serif;
-    color: #F3F7F0;
+.desc {
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    color: #F3F7F0; 
+    width: 100%;
 }
 
-img {
-    display: flex;
-    width: 35%;
+#Face {
+    width: 100%;
+}
+
+dt {
+    font-style: oblique;
+    font-weight: bold;
+    color: #F2545B;
 }
 
 a:link {
@@ -32,4 +40,22 @@ a:hover {
 
 a:active {
   color: #8C5E58;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:nowrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-right {
+    display: flex;
+    justify-content: flex-end;
 }

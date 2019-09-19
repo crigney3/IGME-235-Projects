@@ -1,0 +1,33 @@
+body {
+    background-color: #19323C;
+}
+
+h1 {
+    display: flex;
+    border-bottom: 3px solid #F2545B;
+}
+
+h5 {
+    font-family: serif;
+}
+
+img {
+    display: flex;
+    width: 35%;
+}
+
+a:link {
+  color: #F2545B;
+}
+
+a:visited {
+  color: #F3F7F0;
+}
+
+a:hover {
+  color: #A93F55;
+}
+
+a:active {
+  color: #8C5E58;
+}

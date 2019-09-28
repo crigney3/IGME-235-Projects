@@ -1,46 +1,111 @@
 .navbar ul {
     list-style-type: none;
+    display: flex;
     margin: 0;
+    justify-content: flex-end;
+    align-content: center;
     padding: 0;
-    background-color: #2e3532;
 }
 
 .navbar li {
-    display: inline;
+    display: flex;
     float: right;
+    color:#e0e2db;
+    padding-top: 20px;
+}
+
+.navbar img{
+    width: 100%;
+    float: left;
 }
 
 .navbar a {
-    display: block;
-    padding: 8px;
-    background-color: #d2d4c8;
+    display: flex;
+    color: #d2d4c8;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    color: #d2d4c8;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+    align-content: center;
+}
+
+header {
+    background-color: #2e3532;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.internalImg {
+    overflow: hidden;
+    height: 40%;
+    width: 100%;
+}
+
+.internalImg img{
+    width: 2000px;
+}
+
+.mainImg {
+    width: 100%;
 }
 
 .flex {
     display: flex;
-    justify-content: flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 20%;
-}
-
-.flex img {
-    width: 100%;
+    width: auto;
 }
 
 .column {
-    display:block;
     background-color: #d2d4c8;
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    height: 350px;
 }
 
 .flex-2 {
     background-color: #bc0c06;
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    margin: 10px;
+    padding: 10px;
+}
+
+.internalBlock {
+    display:flex;
+    width: 90%;
+    margin: 10px;
+    flex-wrap: wrap;
+    color: #e0e2db;
+    margin: 10px;
+    padding: 10px;
+}
+
+.internalTitle {
+    
 }
 
 body {
     background-color: #e0e2db;
+    padding: 0;
+    margin: 0;
 }
 
 footer {
@@ -48,9 +113,6 @@ footer {
     display: flex;
     justify-content: space-between;
     color: #e0e2db;
-}
-
-#Copyright {
-    background-color: #e0e2db;
-    
+    padding-left: 10px;
+    padding-right: 10px;
 }

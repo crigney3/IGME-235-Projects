@@ -1,0 +1,80 @@
+.darker {
+    color: #5C5346;
+}
+
+.dark {
+    color: #8C6057;
+}
+
+.medium {
+    color: #A69F98;
+}
+
+.light {
+    color: #AFD5AA;
+}
+
+.lighter {
+    color: #F0F2EF;
+}
+
+body{
+    background-color: #5C5346;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer";
+}
+
+nav { grid-area: nav; }
+header { grid-area: header; }
+main { grid-area: main; }
+
+
+.nav-menu {
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    list-style-type: none;
+}
+
+.nav-link {
+    margin: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer { 
+    grid-area: footer; 
+    display: flex;
+    justify-content: space-between;
+}
+
+a:link {
+    color: #F0F2EF;
+}
+
+a:visited {
+    color: #A69F98;
+    text-decoration: none;
+}
+
+a:focus {
+    color: #AFD5AA;
+}
+
+a:hover {
+    color: #AFD5AA;
+}
+
+a:active {
+    color: #8C6057;
+}

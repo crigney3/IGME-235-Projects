@@ -1,0 +1,18 @@
+#internal {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.column {
+    background-color: #AFD5AA;;
+    color: #1a0a00;
+    margin: 1rem;
+}
+
+.column h3 {
+    font-weight: bold;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}

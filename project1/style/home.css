@@ -1,0 +1,27 @@
+.projectLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    border: 3px dashed #F0F2EF;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    border: 3px dashed #F0F2EF;
+}
+
+.mechanics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    border: 3px dashed #F0F2EF;
+}
+
+#internal p {
+    margin: 1rem;
+}

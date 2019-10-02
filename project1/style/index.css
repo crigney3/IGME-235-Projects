@@ -1,5 +1,5 @@
 .darker {
-    color: #5C5346;
+    color: #1a0a00;
 }
 
 .dark {
@@ -19,7 +19,7 @@
 }
 
 body{
-    background-color: #5C5346;
+    background-color: #1a0a00;
 }
 
 #wrapper {
@@ -29,16 +29,44 @@ body{
     "header"
     "main"
     "footer";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
 }
 
-nav { grid-area: nav; }
-header { grid-area: header; }
-main { grid-area: main; }
+nav { 
+    grid-area: nav; 
+    background-color: #8C6057;
+}
+
+header { 
+    grid-area: header; 
+    padding: 2rem;
+    margin: 2rem;
+    background-color: #AFD5AA;
+    color: #1a0a00;
+    border: 2px solid #8C6057;
+}
+
+header h1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+main { 
+    grid-area: main; 
+}
+
+#internal {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #8C6057;
+    color: #F0F2EF;
+}
 
 
 .nav-menu {
     margin: 1rem;
-    padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -47,7 +75,7 @@ main { grid-area: main; }
 }
 
 .nav-link {
-    margin: 2rem;
+    margin: 0.3rem;
     text-decoration: none;
     font-weight: bold;
 }
@@ -56,6 +84,13 @@ footer {
     grid-area: footer; 
     display: flex;
     justify-content: space-between;
+    align-content: center;
+    background-color: #8C6057;
+    color: #F0F2EF;
+}
+
+footer p, a {
+    margin: 1rem;
 }
 
 a:link {
@@ -78,3 +113,13 @@ a:hover {
 a:active {
     color: #8C6057;
 }
+
+@media only screen and (min-width: 850px) {
+    #wrapper {
+        grid-template-areas:
+        "nav" "header"
+        "main" "main"
+        "footer" "footer";
+    }
+    
+} 

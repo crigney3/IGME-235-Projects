@@ -10,7 +10,7 @@
     background-color: #AFD5AA;;
     color: #1a0a00;
     margin: 1rem;
-    width: 30%;
+    width: 40%;
     display: flex;
     align-content: center;
     justify-content: flex-start;
@@ -25,6 +25,33 @@
 .column p {
     word-wrap: wrap;
     width: 100%;
-    margin: 0.3rem;
-    padding: 0.3rem;
+    margin: 1rem;
+}
+
+.column img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#Screenshots {
+    width: 80%;
+}
+
+#internalImages {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 768px){
+    .column {
+        margin: 0.5rem;
+        width: 100%;
+    }
+    #internal {
+        display: flex;
+        flex-direction: column;
+    }
+    #Screenshots {
+        width: 100%;
+    }
 }

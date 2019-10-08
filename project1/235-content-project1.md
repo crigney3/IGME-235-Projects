@@ -48,7 +48,7 @@ The player navigates around an environment, looking to eat things and grow bigge
 
 ## VIII. Other
 
-Reference images are from StrategyWiki and youtube, respectively. 
+Reference images are from StrategyWiki and Wikipedia, respectively. 
 
 ----
 

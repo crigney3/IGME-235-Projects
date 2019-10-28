@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+
+.wrapper {
+    background-color: yellow;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+h1 {
+    color:black;
+}
+
+.imagewrap img{
+    width: 100%;
+}
+
+.imagewrap p{
+    position: absolute;
+    top: 5rem;
+    right: 4rem;
+    width: 30%;
+    color:black;
+    font-size: 3rem;   
+    font-family: 'Times New Roman', Times, serif;
+}

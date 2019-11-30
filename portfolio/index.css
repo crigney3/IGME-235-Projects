@@ -1,0 +1,43 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+header {
+    background-color: green;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.project {
+    padding: 0.5rem;
+    background-color: red;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.imgGallery {
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+}
+
+.innerImg {
+
+}

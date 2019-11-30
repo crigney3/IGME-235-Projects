@@ -1,5 +1,5 @@
 // 1
-window.onload = (e) => {//document.querySelector("#search").onclick = searchButtonClicked;
+window.onload = (e) => {document.querySelector("#search").onclick = searchButtonClicked;
 getSet();};
 	
 // 2
@@ -15,35 +15,19 @@ function searchButtonClicked(){
     let url = BLIZZARD_URL;
     //url += "api_key=" + BLIZZARD_KEY;
 
-    let term = document.querySelector("#searchterm").value;
-    displayTerm = term;
-
-    term = term.trim();
-
-    term = encodeURIComponent(term);
-
-    if(term.length < 1) return;
-
-    url += "&q=" + term;
-
-    let limit = document.querySelector("#limit").value;
-    url += "&limit=" + limit;
-
-    document.querySelector("#status").innerHTML = "<b>Searching for '" + displayTerm + "'</b>";
-
-    console.log(url);
-
-    getData(url);
+    let term = document.querySelector("#setSearch").value;
+    
+    getSet(term);
 }
 
-function getSet(set="Ysera"){
+function getSet(set="Classic"){
     set = set.trim();
 
     set = encodeURIComponent(set);
 
     if(set.length < 1) return;
 
-    const BLIZZARD_URL = "https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/" + set;
+    const BLIZZARD_URL = "https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/sets/" + set;
 
     getData(BLIZZARD_URL);
 }
@@ -66,36 +50,33 @@ function dataLoaded(e){
 
     console.log(xhr.responseText);
 
-    let obj = JSON.parse(xhr.responseText);
+    let results = JSON.parse(xhr.responseText);
 
-    //if(!obj.data || obj.data.length == 0){
-        //document.querySelector("#status").innerHTML = "<b>No results found </b>";
-        //return;
-    //}
-
-    let results = obj;
+    if(!results.length || results.length == 0){
+        document.querySelector("#status").innerHTML = "<b>No results found </b>";
+        return;
+    }
 
     console.log(results);
+    bigString='';
     //console.log("results.length = " + results.length);
     //let bigString = "<p><i>Here are " + results.length + " results for '" + displayTerm + "'</i></p>";
 
-    /*for(let i=0; i<results.length;i++){
+    for(let i=0; i<results.length;i++){
         let result = results[i];
 
-        if(result.collectible != true) return false;
+        if(result.collectible != true) continue;
 
-        let smallURL = result.images.fixed_width_small.url;
+        let smallURL = result.imgGold;
         if(!smallURL) smallURL = "images/no-image-found.png";
 
         let url = result.url;
 
-        let line = `<div class='result'><img src='${smallURL}' title='${result.id}' />`;
-        line += `<span></span></div>`;
+        line = `<div class='title'><h4>${results[i].name}</h4>`
+        line += `<div class='image'><img src='${results[i].imgGold}' title='${results[i].name}' />`;
 
         bigString += line;
-    }*/
-
-    bigString = `<div class='image'><img src='${results[0].imgGold}' title='${results[0].name}' />`;
+    }
 
     document.querySelector("#content").innerHTML = bigString;
 
